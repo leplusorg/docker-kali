@@ -1,3 +1,0 @@
-FROM kalilinux/kali-rolling
-
-
