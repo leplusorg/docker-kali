@@ -4,9 +4,10 @@ RUN apt-get update \
   && apt-get install -y \
      curl \
      dnsutils \
+     iputils-ping \
      netcat \
      nmap \
-     openssh \
+     openssh-client \
      openssl \
      traceroute \
      wget \
