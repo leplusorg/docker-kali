@@ -10,7 +10,7 @@ RUN apt-get update \
      nmap \
      openssh-client \
      openssl \
-     smblient \
+     smbclient \
      traceroute \
      wget \
   && apt-get --purge remove -y .\*-doc$ \
