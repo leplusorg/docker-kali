@@ -4,11 +4,13 @@ RUN apt-get update \
   && apt-get install -y \
      curl \
      dnsutils \
+     emacs \
      iputils-ping \
      netcat \
      nmap \
      openssh-client \
      openssl \
+     smblient \
      traceroute \
      wget \
   && apt-get --purge remove -y .\*-doc$ \
