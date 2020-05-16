@@ -7,6 +7,7 @@ Kali Linux as a docker container.
 ![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/kali)
 ![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/kali)
 ![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/kali)
+![Docker Version](https://img.shields.io/docker/v/thomasleplus/kali?sort=semver)
 
 ### Mac/Linux
 
