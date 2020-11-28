@@ -2,7 +2,7 @@
 
 Kali Linux as a docker container.
 
-![GitHub Build](https://img.shields.io/github/workflow/status/thomasleplus/docker-kali/Docker%20Image%20CI)
+![Docker Build](https://github.com/thomasleplus/docker-kali/workflows/Docker/badge.svg)
 ![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/kali)
 ![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/kali)
 ![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/kali)
