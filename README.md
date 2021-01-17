@@ -2,12 +2,12 @@
 
 Kali Linux as a docker container.
 
-![Docker Build](https://github.com/thomasleplus/docker-kali/workflows/Docker/badge.svg)
-![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/kali)
-![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/kali)
-![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/kali)
-![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/kali)
-![Docker Version](https://img.shields.io/docker/v/thomasleplus/kali?sort=semver)
+[![Docker Build](https://github.com/thomasleplus/docker-kali/workflows/Docker/badge.svg)](https://github.com/thomasleplus/docker-kali/actions?query=workflow:"Docker")
+[![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/kali)](https://hub.docker.com/r/thomasleplus/kali)
+[![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/kali)](https://hub.docker.com/r/thomasleplus/kali)
+[![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/kali)](https://hub.docker.com/r/thomasleplus/kali)
+[![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/kali)](https://hub.docker.com/r/thomasleplus/kali)
+[![Docker Version](https://img.shields.io/docker/v/thomasleplus/kali?sort=semver)](https://hub.docker.com/r/thomasleplus/kali)
 
 ### Mac/Linux
 
