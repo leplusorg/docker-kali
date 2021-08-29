@@ -6,7 +6,7 @@ RUN apt-get update \
      dnsutils \
      emacs \
      iputils-ping \
-     netcat \
+     netcat-openbsd \
      nmap \
      openssh-client \
      openssl \
