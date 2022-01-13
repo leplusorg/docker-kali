@@ -2,17 +2,17 @@
 
 Kali Linux as a docker container.
 
-[![Docker Build](https://github.com/thomasleplus/docker-kali/workflows/Docker/badge.svg)](https://github.com/thomasleplus/docker-kali/actions?query=workflow:"Docker")
-[![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/kali)](https://hub.docker.com/r/thomasleplus/kali)
-[![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/kali)](https://hub.docker.com/r/thomasleplus/kali)
-[![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/kali)](https://hub.docker.com/r/thomasleplus/kali)
-[![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/kali)](https://hub.docker.com/r/thomasleplus/kali)
-[![Docker Version](https://img.shields.io/docker/v/thomasleplus/kali?sort=semver)](https://hub.docker.com/r/thomasleplus/kali)
+[![Docker Build](https://github.com/leplusorg/docker-kali/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-kali/actions?query=workflow:"Docker")
+[![Docker Stars](https://img.shields.io/docker/stars/leplusorg/kali)](https://hub.docker.com/r/leplusorg/kali)
+[![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/kali)](https://hub.docker.com/r/leplusorg/kali)
+[![Docker Automated](https://img.shields.io/docker/cloud/automated/leplusorg/kali)](https://hub.docker.com/r/leplusorg/kali)
+[![Docker Build](https://img.shields.io/docker/cloud/build/leplusorg/kali)](https://hub.docker.com/r/leplusorg/kali)
+[![Docker Version](https://img.shields.io/docker/v/leplusorg/kali?sort=semver)](https://hub.docker.com/r/leplusorg/kali)
 
 ### Mac/Linux
 
 ```
-docker run -t --user="$(id -u):$(id -g)" -v "$(pwd):/tmp" thomasleplus/kali
+docker run -t --user="$(id -u):$(id -g)" -v "$(pwd):/tmp" leplusorg/kali
 ```
 
 Add the `--rm` option if you want to discard the container when you exit it.
@@ -22,17 +22,17 @@ Add the `--rm` option if you want to discard the container when you exit it.
 In `cmd`:
 
 ```
-docker run -t -v "%cd%:/tmp" thomasleplus/kali
+docker run -t -v "%cd%:/tmp" leplusorg/kali
 ```
 
 In PowerShell:
 
 ```
-docker run --rm -t -v "${PWD}:/tmp" thomasleplus/kali
+docker run --rm -t -v "${PWD}:/tmp" leplusorg/kali
 ```
 
 Add the `--rm` option if you want to discard the container when you exit it.
 
 ## Request new tool
 
-Please use [this link](https://github.com/thomasleplus/docker-kali/issues/new?assignees=thomasleplus&labels=enhancement&template=feature_request.md&title=%5BFEAT%5D) (GitHub account required) to request that a new tool be added to the image. I am always interested in adding new capabilities to these images.
+Please use [this link](https://github.com/leplusorg/docker-kali/issues/new?assignees=leplusorg&labels=enhancement&template=feature_request.md&title=%5BFEAT%5D) (GitHub account required) to request that a new tool be added to the image. I am always interested in adding new capabilities to these images.
