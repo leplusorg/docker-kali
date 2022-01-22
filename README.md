@@ -9,25 +9,25 @@ Kali Linux as a docker container.
 [![Docker Build](https://img.shields.io/docker/cloud/build/leplusorg/kali)](https://hub.docker.com/r/leplusorg/kali)
 [![Docker Version](https://img.shields.io/docker/v/leplusorg/kali?sort=semver)](https://hub.docker.com/r/leplusorg/kali)
 
-### Mac/Linux
+**Mac/Linux**
 
-```
+```bash
 docker run -t --user="$(id -u):$(id -g)" -v "$(pwd):/tmp" leplusorg/kali
 ```
 
 Add the `--rm` option if you want to discard the container when you exit it.
 
-### Windows
+**Windows**
 
 In `cmd`:
 
-```
+```batch
 docker run -t -v "%cd%:/tmp" leplusorg/kali
 ```
 
 In PowerShell:
 
-```
+```pwsh
 docker run --rm -t -v "${PWD}:/tmp" leplusorg/kali
 ```
 
