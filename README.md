@@ -35,4 +35,4 @@ Add the `--rm` option if you want to discard the container when you exit it.
 
 ## Request new tool
 
-Please use [this link](https://github.com/leplusorg/docker-kali/issues/new?assignees=leplusorg&labels=enhancement&template=feature_request.md&title=%5BFEAT%5D) (GitHub account required) to request that a new tool be added to the image. I am always interested in adding new capabilities to these images.
+Please use [this link](https://github.com/leplusorg/docker-kali/issues/new?assignees=thomasleplus&labels=enhancement&template=feature_request.md&title=%5BFEAT%5D) (GitHub account required) to request that a new tool be added to the image. I am always interested in adding new capabilities to these images.
