@@ -1,4 +1,4 @@
-FROM kalilinux/kali-rolling:amd64
+FROM kalilinux/kali-rolling:latest
 
 # hadolint ignore=DL3008
 RUN apt-get update \
