@@ -1,3 +1,4 @@
+# hadolint ignore=DL3007
 FROM kalilinux/kali-rolling:latest
 
 # hadolint ignore=DL3008
