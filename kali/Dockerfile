@@ -1,6 +1,6 @@
-# hadolint ignore=DL3007
 # checkov:skip=CKV_DOCKER_3
 # checkov:skip=CKV_DOCKER_7
+# hadolint ignore=DL3007
 FROM kalilinux/kali-rolling:latest
 
 HEALTHCHECK NONE
