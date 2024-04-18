@@ -6,4 +6,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: sh -c '[ $(id -u) -eq 0 ] && curl --version'"
+    command: "sh -c '[ $(id -u) -eq 0 ] && curl --version'"
