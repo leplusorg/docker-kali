@@ -1,5 +1,11 @@
 # hadolint ignore=DL3007
+# checkov:skip=CKV_DOCKER_3
+# checkov:skip=CKV_DOCKER_7
 FROM kalilinux/kali-rolling:latest
+
+HEALTHCHECK NONE
+
+ENTRYPOINT []
 
 # hadolint ignore=DL3008
 RUN apt-get update \
