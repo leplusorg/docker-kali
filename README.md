@@ -7,6 +7,8 @@ Kali Linux as a docker container.
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/kali)](https://hub.docker.com/r/leplusorg/kali)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/kali)](https://hub.docker.com/r/leplusorg/kali)
 [![Docker Version](https://img.shields.io/docker/v/leplusorg/kali?sort=semver)](https://hub.docker.com/r/leplusorg/kali)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/10069/badge)](https://bestpractices.coreinfrastructure.org/projects/10069)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/leplusorg/docker-kali/badge)](https://securityscorecards.dev/viewer/?uri=github.com/leplusorg/docker-kali)
 
 **Mac/Linux**
 
