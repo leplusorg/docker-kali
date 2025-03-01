@@ -24,9 +24,11 @@ jobs:
         shell: bash
         run: |
           # shellcheck disable=SC2086
-          VERSION="$(\grep ${IMAGE}/Dockerfile -e '^FROM' | \head -n 1 | \sed -e 's/@.*$//; s/^.*://;')"
+          VERSION="$(\docker run -t '${GITHUB_REPOSITORY_OWNER}/${IMAGE}:main' cat /etc/os-release | \grep -e '^VERSION_ID=' | \sed -e 's/^.*=//; s/"//g')"
           if [[ "${VERSION}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] ; then
             \echo "VERSION=${VERSION}" >> "${GITHUB_ENV}"
+          elif [[ "${VERSION}" =~ ^[0-9]+\.[0-9]+$ ]] ; then
+            \echo "VERSION=${VERSION}.0" >> "${GITHUB_ENV}"
           fi
       - name: Check if release already exists
         if: env.VERSION != ''
