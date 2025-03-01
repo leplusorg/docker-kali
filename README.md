@@ -13,7 +13,7 @@ Kali Linux as a docker container.
 **Mac/Linux**
 
 ```bash
-docker run -t --user="$(id -u):$(id -g)" -v "$(pwd):/tmp" leplusorg/kali
+docker run -it --user="$(id -u):$(id -g)" -v "$(pwd):/tmp" leplusorg/kali
 ```
 
 Add the `--rm` option if you want to discard the container when you exit it.
@@ -23,13 +23,13 @@ Add the `--rm` option if you want to discard the container when you exit it.
 In `cmd`:
 
 ```batch
-docker run -t -v "%cd%:/tmp" leplusorg/kali
+docker run -it -v "%cd%:/tmp" leplusorg/kali
 ```
 
 In PowerShell:
 
 ```pwsh
-docker run --rm -t -v "${PWD}:/tmp" leplusorg/kali
+docker run -it -v "${PWD}:/tmp" leplusorg/kali
 ```
 
 Add the `--rm` option if you want to discard the container when you exit it.
@@ -59,7 +59,7 @@ You can use the following command to verify the latest image using its
 sigstore signature attestation:
 
 ```bash
-cosign verify leplusorg/kali --certificate-identity-regexp 'https://github\.com/leplusorg/docker-av/\.github/workflows/.+' --certificate-oidc-issuer 'https://token.actions.githubusercontent.com'
+cosign verify leplusorg/kali --certificate-identity-regexp 'https://github\.com/leplusorg/docker-kali/\.github/workflows/.+' --certificate-oidc-issuer 'https://token.actions.githubusercontent.com'
 ```
 
 The output should look something like this:
