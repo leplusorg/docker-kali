@@ -24,7 +24,7 @@ jobs:
         shell: bash
         run: |
           # shellcheck disable=SC2086
-          VERSION="$(\docker run -t "${GITHUB_REPOSITORY_OWNER}/${IMAGE}:main" cat /etc/os-release | \grep -e '^VERSION_ID=' | \sed -e 's/^.*=//; s/"//g s/\r//')"
+          VERSION="$(\docker run -t "${GITHUB_REPOSITORY_OWNER}/${IMAGE}:main" cat /etc/os-release | \grep -e '^VERSION_ID=' | \sed -e 's/^.*=//; s/"//g; s/\r//')"
           if [[ "${VERSION}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] ; then
             \echo "VERSION=${VERSION}" >> "${GITHUB_ENV}"
           elif [[ "${VERSION}" =~ ^[0-9]+\.[0-9]+$ ]] ; then
