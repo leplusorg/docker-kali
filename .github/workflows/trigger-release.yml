@@ -24,7 +24,12 @@ jobs:
         shell: bash
         run: |
           # shellcheck disable=SC2086
-          echo "$(\docker run -t "${GITHUB_REPOSITORY_OWNER}/${IMAGE}:main" cat /etc/os-release | \grep -e '^VERSION_ID=' | \sed -e 's/^.*=//; s/"//g')"
+          DEBUG="$(\docker run -t "${GITHUB_REPOSITORY_OWNER}/${IMAGE}:main" cat /etc/os-release | \grep -e '^VERSION_ID=' | \sed -e 's/^.*=//; s/"//g')"
+          if [[ "${DEBUG}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] ; then
+            \echo "${DEBUG}"
+          elif [[ "${DEBUG}" =~ ^[0-9]+\.[0-9]+$ ]] ; then
+            \echo "${DEBUG}.0"
+          fi
           # shellcheck disable=SC2086
           VERSION="$(\docker run -t "${GITHUB_REPOSITORY_OWNER}/${IMAGE}:main" cat /etc/os-release | \grep -e '^VERSION_ID=' | \sed -e 's/^.*=//; s/"//g')"
           if [[ "${VERSION}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] ; then
