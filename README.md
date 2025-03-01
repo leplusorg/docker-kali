@@ -13,7 +13,7 @@ Kali Linux as a docker container.
 **Mac/Linux**
 
 ```bash
-docker run -t --user="$(id -u):$(id -g)" -v "$(pwd):/tmp" leplusorg/kali
+docker run -it --user="$(id -u):$(id -g)" -v "$(pwd):/tmp" leplusorg/kali
 ```
 
 Add the `--rm` option if you want to discard the container when you exit it.
@@ -23,13 +23,13 @@ Add the `--rm` option if you want to discard the container when you exit it.
 In `cmd`:
 
 ```batch
-docker run -t -v "%cd%:/tmp" leplusorg/kali
+docker run -it -v "%cd%:/tmp" leplusorg/kali
 ```
 
 In PowerShell:
 
 ```pwsh
-docker run --rm -t -v "${PWD}:/tmp" leplusorg/kali
+docker run -it -v "${PWD}:/tmp" leplusorg/kali
 ```
 
 Add the `--rm` option if you want to discard the container when you exit it.
