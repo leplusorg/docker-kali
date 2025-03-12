@@ -23,8 +23,8 @@ RUN apt-get update \
      openssl=3.4.1-1 \
      smbclient=2:4.22.0+dfsg-1 \
      wget=1.25.0-1 \
-  && if apt list --upgradable | grep -q -e 'upgradable' ; then \
-     apt list --upgradable ; \
+  && if apt-get -s upgrade | grep -q -e '^Inst ' ; then \
+     apt-get -s upgrade | grep -e '^Inst ' ; \
      exit 1 ; \
   fi \
   && apt-get --purge remove -y .\*-doc$ \
