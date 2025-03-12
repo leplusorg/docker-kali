@@ -25,7 +25,8 @@ RUN apt-get update \
       python3-pip=25.0+dfsg-1 \
       smbclient=2:4.22.0+dfsg-1 \
       wget=1.25.0-1 \
-    && IFS=$'\n\t' if apt-get -s upgrade | grep -q -e '^Inst ' ; then \
+    && IFS=$'\n\t' \
+    && if apt-get -s upgrade | grep -q -e '^Inst ' ; then \
       apt-get -s upgrade | grep -e '^Inst ' ; \
       exit 1 ; \
     fi \
