@@ -10,7 +10,7 @@ ENTRYPOINT []
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN apt-get update \
-  && apt-get upgrade \
+  && apt-get upgrade -y \
   && apt-get install --no-install-recommends -y \
      bind9-dnsutils=1:9.20.4-4 \
      curl=8.12.1-3 \
