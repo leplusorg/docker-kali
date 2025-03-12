@@ -7,26 +7,28 @@ HEALTHCHECK NONE
 
 ENTRYPOINT []
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash", "-euo", "pipefail", "-c"]
 
 RUN apt-get update \
-  && apt-get upgrade -y \
-  && apt-get install --no-install-recommends -y \
-     bind9-dnsutils=1:9.20.4-4 \
-     curl=8.12.1-3 \
-     emacs-nox=1:29.4+1-6 \
-     inetutils-traceroute=2:2.6-1 \
-     iputils-ping=3:20240905-1 \
-     netcat-openbsd=1.228-1 \
-     nmap=7.95+dfsg-1kali1 \
-     openssh-client=1:9.9p2-1 \
-     openssl=3.4.1-1 \
-     smbclient=2:4.22.0+dfsg-1 \
-     wget=1.25.0-1 \
-  && if apt-get -s upgrade | grep -q -e '^Inst ' ; then \
-     apt-get -s upgrade | grep -e '^Inst ' ; \
-     exit 1 ; \
-  fi \
-  && apt-get --purge remove -y .\*-doc$ \
-  && apt-get clean -y \
-  && rm -rf /var/lib/apt/lists/*
+    && apt-get upgrade -y \
+    && apt-get install --no-install-recommends -y \
+      bind9-dnsutils=1:9.20.4-4 \
+      curl=8.12.1-3 \
+      emacs-nox=1:29.4+1-6 \
+      inetutils-traceroute=2:2.6-1 \
+      iputils-ping=3:20240905-1 \
+      netcat-openbsd=1.228-1 \
+      nmap=7.95+dfsg-1kali1 \
+      openssh-client=1:9.9p2-1 \
+      openssl=3.4.1-1 \
+      python3=3.13.1-2 \
+      python3-pip=25.0+dfsg-1 \
+      smbclient=2:4.22.0+dfsg-1 \
+      wget=1.25.0-1 \
+    && IFS=$'\n\t' if apt-get -s upgrade | grep -q -e '^Inst ' ; then \
+      apt-get -s upgrade | grep -e '^Inst ' ; \
+      exit 1 ; \
+    fi \
+    && apt-get --purge remove -y .\*-doc$ \
+    && apt-get clean -y \
+    && rm -rf /var/lib/apt/lists/*
