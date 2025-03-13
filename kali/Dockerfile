@@ -30,6 +30,5 @@ RUN apt-get update \
       apt-get -s upgrade | grep -e '^Inst ' ; \
       exit 1 ; \
     fi \
-    && apt-get --purge remove -y .\*-doc$ \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
