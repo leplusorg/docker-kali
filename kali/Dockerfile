@@ -14,7 +14,7 @@ RUN apt-get update \
     && apt-get install --no-install-recommends -y \
       bind9-dnsutils=1:9.20.4-4 \
       curl=8.12.1-3 \
-      emacs-nox=1:29.4+1-6 \
+      emacs-nox=1:30.1+1-4 \
       inetutils-traceroute=2:2.6-1 \
       iputils-ping=3:20240905-1 \
       netcat-openbsd=1.228-1 \
