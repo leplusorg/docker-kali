@@ -25,7 +25,8 @@ RUN apt-get update \
       openssl=3.4.1-1 \
       python3=3.13.1-2 \
       python3-pip=25.0+dfsg-1 \
-      smbclient=2:4.22.0+dfsg-1 \
+      smbclient=2:4.22.0+dfsg-1+b1 \
+      tor=0.4.8.14-1 \
       wget=1.25.0-1 \
     && IFS=$'\n\t' \
     && if apt-get -s upgrade | grep -q -e '^Inst ' ; then \
