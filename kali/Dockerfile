@@ -14,11 +14,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install --no-install-recommends -y \
-      bind9-dnsutils=1:9.20.7-1 \
+      bind9-dnsutils=1:9.20.8-6 \
       curl=8.13.0-1 \
       emacs-nox=1:30.1+1-5 \
       inetutils-traceroute=2:2.6-1 \
-      iputils-ping=3:20240905-1 \
+      iputils-ping=3:20240905-3 \
       netcat-openbsd=1.228-1 \
       nmap=7.95+dfsg-1kali1 \
       openssh-client=1:9.9p2-2 \
