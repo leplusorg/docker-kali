@@ -20,10 +20,10 @@ RUN apt-get update \
       inetutils-traceroute=2:2.6-1 \
       iputils-ping=3:20240905-3 \
       netcat-openbsd=1.229-1 \
-      nmap=7.95+dfsg-1kali1 \
-      openssh-client=1:9.9p2-2 \
+      nmap=7.95+dfsg-3kali1 \
+      openssh-client=1:10.0p1-5 \
       openssl=3.5.0-1 \
-      python3=3.13.2-2 \
+      python3=3.13.3-1 \
       python3-pip=25.1.1+dfsg-1 \
       smbclient=2:4.22.1+dfsg-1 \
       tor=0.4.8.16-1 \
