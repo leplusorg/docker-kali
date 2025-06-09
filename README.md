@@ -1,6 +1,6 @@
 # Kali
 
-Kali Linux as a docker container.
+Kali Linux as a multi-platform Docker container.
 
 [![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](kali/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-kali/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-kali/actions?query=workflow:"Docker")
