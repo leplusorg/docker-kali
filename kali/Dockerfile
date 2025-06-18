@@ -15,7 +15,7 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install --no-install-recommends -y \
       bind9-dnsutils=1:9.20.9-1 \
-      curl=8.13.0-5 \
+      curl=8.14.1-1 \
       emacs-nox=1:30.1+1-5 \
       git=1:2.47.2-0.1 \
       inetutils-traceroute=2:2.6-1 \
@@ -26,7 +26,7 @@ RUN apt-get update \
       openssl=3.5.0-2 \
       python3=3.13.3-1 \
       python3-pip=25.1.1+dfsg-1 \
-      smbclient=2:4.22.1+dfsg-1 \
+      smbclient=2:4.22.2+dfsg-1 \
       tor=0.4.8.16-1 \
       wget=1.25.0-2 \
     && IFS=$'\n\t' \
