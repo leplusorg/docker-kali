@@ -19,7 +19,7 @@ RUN apt-get update \
       emacs-nox=1:30.1+1-6 \
       git=1:2.50.1-0.1 \
       inetutils-traceroute=2:2.6-3 \
-      iputils-ping=3:20240905-3 \
+      iputils-ping=3:20250605-1 \
       netcat-openbsd=1.229-1 \
       nmap=7.95+dfsg-3kali1 \
       openssh-client=1:10.0p1-7 \
