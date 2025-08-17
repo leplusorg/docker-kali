@@ -29,9 +29,7 @@ RUN apt-get update \
       smbclient=2:4.22.3+dfsg-4 \
       tor=0.4.8.16-1 \
       wget=1.25.0-2 \
-    && IFS=$'\n\t' \
-    && if apt-get -s upgrade | grep -q -e '^Inst ' ; then \
-      apt-get -s upgrade | grep -e '^Inst ' ; \
+    && if apt-get -s upgrade | tee -a /dev/stderr | grep -q -e '^Inst ' ; then \
       exit 1 ; \
     fi \
     && apt-get clean -y \
