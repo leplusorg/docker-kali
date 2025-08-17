@@ -4,4 +4,25 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: "sh -c '[ $$(id -u) -eq 0 ] && curl --version'"
+    command: |
+      sh -c '
+        set -euo pipefail
+        if [ $(id -u) -ne 0 ]; then
+          exit 1
+        fi
+        curl --version # curl
+        dig -v # bind9-dnsutils
+        emacs --version # emacs-nox
+        git --version # git
+        inetutils-traceroute --version # inetutils-traceroute
+        nc -h # netcat-openbsd
+        nmap --version # nmap
+        openssl --version # openssl
+        ping -V # iputils-ping
+        pip --version # python3-pip
+        python3 --version # python3
+        smbclient --version # smbclient
+        ssh -V # openssh-client
+        tor --version # tor
+        wget --version # wget
+      '
