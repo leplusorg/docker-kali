@@ -18,7 +18,7 @@ RUN apt-get update \
       curl=8.14.1-2 \
       emacs-nox=1:30.1+1-8 \
       git=1:2.50.1-0.1 \
-      inetutils-traceroute=2:2.6-3 \
+      inetutils-traceroute=2:2.6-4 \
       iputils-ping=3:20250605-1 \
       netcat-openbsd=1.229-1 \
       nmap=7.95+dfsg-3kali1 \
