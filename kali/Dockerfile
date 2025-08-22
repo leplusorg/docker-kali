@@ -14,7 +14,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install --no-install-recommends -y \
-      bind9-dnsutils=1:9.20.11-4 \
+      bind9-dnsutils=1:9.20.11-4+b1 \
       curl=8.14.1-2 \
       emacs-nox=1:30.1+1-6 \
       git=1:2.50.1-0.1 \
