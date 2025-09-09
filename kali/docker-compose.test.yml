@@ -8,7 +8,7 @@ services:
       sh -c '
         set -euo pipefail
         # Use $$ to prevent interpolation 
-        if [ $$(id -u) -ne 0 ]; then
+        if [ $$(id -u) -ne 1000 ]; then
           exit 1
         fi
         curl --version # curl
