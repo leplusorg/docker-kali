@@ -1,6 +1,8 @@
 # checkov:skip=CKV_DOCKER_3
 # checkov:skip=CKV_DOCKER_7
 # hadolint ignore=DL3007
+# trivy:ignore:AVD-DS-0001
+# trivy:ignore:AVD-DS-0002
 FROM kalilinux/kali-rolling:latest
 
 HEALTHCHECK NONE
