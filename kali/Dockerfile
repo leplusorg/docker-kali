@@ -1,13 +1,14 @@
-# checkov:skip=CKV_DOCKER_3
-# checkov:skip=CKV_DOCKER_7
-# hadolint ignore=DL3007
-# trivy:ignore:AVD-DS-0001
-# trivy:ignore:AVD-DS-0002
+# hadolint ignore=DL3007 # checkov:skip=CKV_DOCKER_7 # trivy:ignore:AVD-DS-0001 # [Don't use latest]: no tagged version available
 FROM kalilinux/kali-rolling:latest
 
 HEALTHCHECK NONE
 
 ENTRYPOINT []
+
+ARG USER_NAME=kali
+ARG USER_HOME=/home/kali
+ARG USER_ID=1000
+ARG USER_GECOS=kali
 
 SHELL ["/bin/bash", "-euo", "pipefail", "-c"]
 
@@ -33,3 +34,16 @@ RUN apt-get update \
       wget=1.25.0-2 \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
+
+RUN adduser \
+  --home "${USER_HOME}" \
+  --uid "${USER_ID}" \
+  --gecos "${USER_GECOS}" \
+  --disabled-password \
+  "${USER_NAME}"
+
+USER "${USER_NAME}"
+
+ENV HOME="${USER_HOME}"
+
+WORKDIR "${HOME}"
