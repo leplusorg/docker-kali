@@ -17,7 +17,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get upgrade -y \
     # FIXME @TL workaround for amd64 vs arm64 versions
-    && if [ "$(\uname -m)" = 'aarch64' ]; then \
+    && if [ "$(\uname -m)" = 'x86_64' ]; then \
       SUFFIX='+b1' ; \
     else \
       SUFFIX='' ; \
