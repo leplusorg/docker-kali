@@ -29,7 +29,7 @@ RUN apt-get update \
       git=1:2.51.0-1 \
       inetutils-traceroute=2:2.6-4 \
       iputils-ping=3:20250605-1 \
-      netcat-openbsd=1.229-1 \
+      netcat-openbsd=1.234-1 \
       nmap=7.95+dfsg-3kali1 \
       openssh-client=1:10.0p1-8 \
       openssl=3.5.3-1 \
