@@ -23,7 +23,7 @@ RUN apt-get update \
       SUFFIX='' ; \
     fi \
     && apt-get install --no-install-recommends -y \
-      bind9-dnsutils=1:9.20.15-1 \
+      bind9-dnsutils=1:9.20.15-2 \
       curl=8.15.0-1 \
       emacs-nox=1:30.1+1-9${SUFFIX} \
       git=1:2.51.0-1 \
