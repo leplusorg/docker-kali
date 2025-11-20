@@ -17,15 +17,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get upgrade -y \
     # FIXME @TL workaround for amd64 vs arm64 versions
-    && if [ "$(\uname -m)" = 'x86_64' ]; then \
-      SUFFIX='+b1' ; \
-    else \
-      SUFFIX='' ; \
-    fi \
     && apt-get install --no-install-recommends -y \
       bind9-dnsutils=1:9.20.15-2 \
       curl=8.15.0-1 \
-      emacs-nox=1:30.1+1-9${SUFFIX} \
+      emacs-nox=1:30.2+1-1 \
       git=1:2.51.0-1 \
       inetutils-traceroute=2:2.6-4 \
       iputils-ping=3:20250605-1 \
