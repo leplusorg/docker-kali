@@ -20,7 +20,7 @@ RUN apt-get update \
     && apt-get install --no-install-recommends -y \
       bind9-dnsutils=1:9.20.15-2 \
       curl=8.17.0-3 \
-      emacs-nox=1:30.2+1-1 \
+      emacs-nox=1:30.2+1-2 \
       git=1:2.51.0-1 \
       inetutils-traceroute=2:2.6-4 \
       iputils-ping=3:20250605-1 \
@@ -29,7 +29,7 @@ RUN apt-get update \
       openssh-client=1:10.2p1-3 \
       openssl=3.5.4-1 \
       python3=3.13.7-1+b1 \
-      python3-pip=25.2+dfsg-1 \
+      python3-pip=25.3+dfsg-1 \
       smbclient=2:4.23.3+dfsg-1+b1 \
       tor=0.4.8.16-1 \
       wget=1.25.0-2 \
