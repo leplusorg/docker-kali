@@ -16,7 +16,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get upgrade -y \
-    # FIXME @TL workaround for amd64 vs arm64 versions
     && apt-get install --no-install-recommends -y \
       bind9-dnsutils=1:9.20.15-2 \
       curl=8.17.0-3 \
