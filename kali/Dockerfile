@@ -18,11 +18,11 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install --no-install-recommends -y \
       bind9-dnsutils=1:9.20.15-2 \
-      curl=8.18.0~rc3-1 \
+      curl=8.18.0-2 \
       emacs-nox=1:30.2+1-2 \
-      git=1:2.51.0-1 \
+      git=1:2.51.0-1+b1 \
       inetutils-traceroute=2:2.7-1 \
-      iputils-ping=3:20250605-1 \
+      iputils-ping=3:20250605-1+b1 \
       netcat-openbsd=1.234-1+b1 \
       nmap=7.98+dfsg-1kali1 \
       openssh-client=1:10.2p1-3 \
