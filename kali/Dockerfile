@@ -16,14 +16,20 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get upgrade -y \
+    # FIXME @TL workaround for amd64 vs arm64 versions
+    && if [ "$(\uname -m)" = 'aarch64' ]; then \
+      SUFFIX='+b1' ; \
+    else \
+      SUFFIX='' ; \
+    fi \
     && apt-get install --no-install-recommends -y \
       bind9-dnsutils=1:9.20.15-2 \
       curl=8.18.0-2 \
       emacs-nox=1:30.2+1-2 \
-      git=1:2.51.0-1+b1 \
+      git=1:2.51.0-1${SUFFIX} \
       inetutils-traceroute=2:2.7-1 \
-      iputils-ping=3:20250605-1+b1 \
-      netcat-openbsd=1.234-1+b1 \
+      iputils-ping=3:20250605-1${SUFFIX} \
+      netcat-openbsd=1.234-1${SUFFIX} \
       nmap=7.98+dfsg-1kali1 \
       openssh-client=1:10.2p1-3 \
       openssl=3.5.4-1+b1 \
@@ -31,7 +37,7 @@ RUN apt-get update \
       python3-pip=25.3+dfsg-1 \
       smbclient=2:4.23.4+dfsg-1 \
       tor=0.4.8.21-1 \
-      wget=1.25.0-2+b1 \
+      wget=1.25.0-2${SUFFIX} \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
