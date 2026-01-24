@@ -23,15 +23,15 @@ RUN apt-get update \
       git=1:2.51.0-1+b1 \
       inetutils-traceroute=2:2.7-1 \
       iputils-ping=3:20250605-1 \
-      netcat-openbsd=1.234-1 \
+      netcat-openbsd=1.234-1+b1 \
       nmap=7.98+dfsg-1kali1 \
       openssh-client=1:10.2p1-3 \
-      openssl=3.5.4-1 \
+      openssl=3.5.4-1+b1 \
       python3=3.13.7-1+b1 \
       python3-pip=25.3+dfsg-1 \
       smbclient=2:4.23.4+dfsg-1 \
       tor=0.4.8.21-1 \
-      wget=1.25.0-2 \
+      wget=1.25.0-2+b1 \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
