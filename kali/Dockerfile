@@ -20,7 +20,7 @@ RUN apt-get update \
       bind9-dnsutils=1:9.20.15-2 \
       curl=8.18.0~rc3-1 \
       emacs-nox=1:30.2+1-2 \
-      git=1:2.51.0-1 \
+      git=1:2.51.0-1+b1 \
       inetutils-traceroute=2:2.7-1 \
       iputils-ping=3:20250605-1 \
       netcat-openbsd=1.234-1 \
