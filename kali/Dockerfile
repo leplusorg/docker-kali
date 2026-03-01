@@ -32,7 +32,7 @@ RUN apt-get update \
       netcat-openbsd=1.234-1${SUFFIX} \
       nmap=7.98+dfsg-1kali1 \
       openssh-client=1:10.2p1-3 \
-      openssl=3.5.4-1+b1 \
+      openssl=3.5.5-1 \
       python3=3.13.7-1+b1 \
       python3-pip=26.0.1+dfsg-1 \
       smbclient=2:4.23.5+dfsg-1 \
