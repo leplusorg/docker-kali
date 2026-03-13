@@ -23,7 +23,7 @@ RUN apt-get update \
       SUFFIX='' ; \
     fi \
     && apt-get install --no-install-recommends -y \
-      bind9-dnsutils=1:9.20.18-1 \
+      bind9-dnsutils=1:9.20.20-1 \
       curl=8.18.0-2 \
       emacs-nox=1:30.2+1-2 \
       git=1:2.51.0-1${SUFFIX} \
@@ -31,7 +31,7 @@ RUN apt-get update \
       iputils-ping=3:20250605-1${SUFFIX} \
       netcat-openbsd=1.234-1${SUFFIX} \
       nmap=7.98+dfsg-1kali1 \
-      openssh-client=1:10.2p1-3 \
+      openssh-client=1:10.2p1-5 \
       openssl=3.5.5-1 \
       python3=3.13.9-3 \
       python3-pip=26.0.1+dfsg-1 \
