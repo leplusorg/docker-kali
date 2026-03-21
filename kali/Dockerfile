@@ -27,9 +27,9 @@ RUN apt-get update \
       curl=8.18.0-2 \
       emacs-nox=1:30.2+1-2 \
       git=1:2.53.0-1${SUFFIX} \
-      inetutils-traceroute=2:2.7-3 \
+      inetutils-traceroute=2:2.7-4 \
       iputils-ping=3:20250605-1${SUFFIX} \
-      netcat-openbsd=1.234-1${SUFFIX} \
+      netcat-openbsd=1.234-2${SUFFIX} \
       nmap=7.98+dfsg-1kali1 \
       openssh-client=1:10.2p1-5 \
       openssl=3.5.5-1 \
