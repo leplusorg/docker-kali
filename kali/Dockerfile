@@ -35,7 +35,7 @@ RUN apt-get update \
       openssl=3.6.1-3 \
       python3=3.13.9-3 \
       python3-pip=26.0.1+dfsg-1 \
-      smbclient=2:4.23.6+dfsg-2 \
+      smbclient=2:4.24.1+dfsg-1 \
       tor=0.4.9.6-1 \
       wget=1.25.0-2${SUFFIX} \
     && apt-get clean -y \
