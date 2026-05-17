@@ -1,6 +1,0 @@
-{
-  "ignore": [
-    ".github/workflows/dockerimage.yml",
-    ".github/workflows/dockerrelease.yml"
-  ]
-}
