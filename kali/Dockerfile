@@ -33,7 +33,7 @@ RUN apt-get update \
       nmap=7.99+dfsg-1kali1 \
       openssh-client=1:10.3p1-1 \
       openssl=3.6.2-1 \
-      python3=3.13.9-3 \
+      python3=3.13.9-3+b1 \
       python3-pip=26.0.1+dfsg-1 \
       smbclient=2:4.24.1+dfsg-1 \
       tor=0.4.9.8-1 \
