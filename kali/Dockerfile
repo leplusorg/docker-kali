@@ -25,7 +25,7 @@ RUN apt-get update \
     && apt-get install --no-install-recommends -y \
       bind9-dnsutils=1:9.20.23-1 \
       curl=8.19.0-3 \
-      emacs-nox=1:30.2+1-2 \
+      emacs-nox=1:30.2+1-3 \
       git=1:2.53.0-1 \
       inetutils-traceroute=2:2.8-2 \
       iputils-ping=3:20250605-1${SUFFIX} \
