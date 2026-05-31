@@ -12,7 +12,7 @@ jobs:
   apt-check-versions:
     permissions:
       # Required to clone repo
-      contents: reaad
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Set IMAGE
