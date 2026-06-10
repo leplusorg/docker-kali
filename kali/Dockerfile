@@ -31,7 +31,7 @@ RUN apt-get update \
       iputils-ping=3:20250605-1${SUFFIX} \
       netcat-openbsd=1.238-1 \
       nmap=7.99+dfsg-1kali1 \
-      openssh-client=1:10.3p1-2 \
+      openssh-client=1:10.3p1-4 \
       openssl=3.6.2-1 \
       python3=3.13.9-3+b1 \
       python3-pip=26.1.1+dfsg-1 \
