@@ -25,13 +25,13 @@ RUN apt-get update \
     && apt-get install --no-install-recommends -y \
       bind9-dnsutils=1:9.20.24-1+b1 \
       curl=8.20.0-5 \
-      emacs-nox=1:30.2+1-3 \
+      emacs-nox=1:30.2+1-10 \
       git=1:2.53.0-1 \
       inetutils-traceroute=2:2.8-2 \
       iputils-ping=3:20250605-1${SUFFIX} \
       netcat-openbsd=1.238-1 \
       nmap=7.99+dfsg-1kali1 \
-      openssh-client=1:10.3p1-4 \
+      openssh-client=1:10.3p1-5 \
       openssl=3.6.3-1 \
       python3=3.13.9-3+b1 \
       python3-pip=26.1.2+dfsg-1 \
