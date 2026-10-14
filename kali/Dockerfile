@@ -30,7 +30,7 @@ RUN apt-get update \
       inetutils-traceroute=2:2.8-3 \
       iputils-ping=3:20250605-1${SUFFIX} \
       netcat-openbsd=1.238-1 \
-      nmap=7.99+dfsg-1kali1 \
+      nmap=7.991+dfsg-1kali1 \
       openssh-client=1:10.5p1-1 \
       openssl=3.6.4-1 \
       python3=3.14.7-3 \
