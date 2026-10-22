@@ -36,7 +36,7 @@ RUN apt-get update \
       python3=3.14.7-3 \
       python3-pip=26.1.2+dfsg-1 \
       smbclient=2:4.25.0+dfsg-1 \
-      tor=0.4.9.12-4 \
+      tor=0.4.9.14-1 \
       wget=1.25.0-3 \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
