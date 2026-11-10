@@ -34,7 +34,7 @@ RUN apt-get update \
       openssh-client=1:10.6p1-1 \
       openssl=3.6.5-1 \
       python3=3.14.7-3 \
-      python3-pip=26.1.2+dfsg-1 \
+      python3-pip=26.2.2+dfsg-1 \
       smbclient=2:4.25.1+dfsg-1 \
       tor=0.4.9.14-1 \
       wget=1.25.0-3 \
